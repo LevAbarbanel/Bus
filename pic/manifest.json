@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Shira Bus",
+  "description": "Quick access to bus routes from הגנים 17 to תיכון רוטברג",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://moovitapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

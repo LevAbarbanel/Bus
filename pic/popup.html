@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shira Bus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Shira Bus</h1>
+    <p>מתי יש קו לשירה עד לבית?</p>
+    <div class="update-time" id="update-time"></div>
+  </div>
+
+  <div id="routes-container">
+    <div class="loading">טוען נתונים</div>
+  </div>
+
+  <div class="footer">
+    <button id="refresh-button">רענן נתונים</button>
+  </div>
+
+  <script src="popup.js"></script>
+  <script src="debug-helper.js"></script>
+</body>
+</html>
